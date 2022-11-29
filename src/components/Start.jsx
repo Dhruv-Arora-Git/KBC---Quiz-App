@@ -1,6 +1,6 @@
 import "../css/start.css";
 import kbcLogo from "../assets/logo.png";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import useSound from "use-sound";
 import play from "../sounds/play.mp3";
 import welcomeSound from "../sounds/welcome.mpeg";
