@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@1,500&display=swap");
+.heading {
+  font-family: "Gelasio", serif;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+
+  background-image: linear-gradient(
+    -235deg,
+    #ffdc16 0%,
+    #f99b04 29%,
+    #fb9700 67%,
+    #f8c009 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 3s lineup ease-out, textclip 2s linear infinite;
+  font-size: 100px;
+}
+
+.head {
+  background-image: linear-gradient(
+    -235deg,
+    #ffdc16 0%,
+    #f99b04 29%,
+    #fb9700 67%,
+    #f8c009 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 3s lineup ease-out, textclip 2s linear infinite;
+  font-size: 80px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes lineup {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  20% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.top {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.start {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.start-input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+.start-input:focus {
+  outline: none;
+}
+
+.start-btn {
+  width: 100%;
+  height: 30px;
+  box-sizing: content-box;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 166, 0);
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.kbc-image {
+  position: fixed;
+  top: 600px;
+  left: 860px;
+  height: 220px;
+  animation: rotate 2.5s infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
